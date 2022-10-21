@@ -3,13 +3,11 @@ import pandas as pd
 from tkinter import *
 from tkinter import ttk
 df = pd.read_excel('tradevalue.xlsx', header=0, index_col=0)
-print(df)
 def calcValue(*args):
     global t1
     t1 = t1.get().split(", ")
     global t2
     t2 = t2.get().split(", ")
-    print(t1, t2)
     t1val = 0
     t2val = 0
     for i in t1:
